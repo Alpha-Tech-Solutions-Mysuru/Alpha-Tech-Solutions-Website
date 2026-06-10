@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- --- SEO Meta Tags --- -->
+  <title>Alpha Tech Solutions | Digital Agency | Design. Develop. Grow.</title>
+  <meta name="description" content="Alpha Tech Solutions is a premium technology-focused digital agency in Mysuru, Karnataka. We specialize in custom website development, high-converting e-commerce, SEO optimization, cybersecurity, and UI/UX design.">
+  <meta name="keywords" content="digital agency mysore, web development karnataka, e-commerce website design, seo optimization, cybersecurity services, website maintenance, ui ux designer, alpha tech solutions, vignesh s founder">
+  <meta name="author" content="Alpha Tech Solutions">
+  <link rel="canonical" href="https://alphatechsolutions.in/">
+
+  <!-- --- OpenGraph Meta Tags --- -->
+  <meta property="og:title" content="Alpha Tech Solutions | Design. Develop. Grow.">
+  <meta property="og:description" content="Empowering businesses through cutting-edge website development, high-converting e-commerce platforms, SEO, and cybersecurity.">
+  <meta property="og:image" content="assets/logo.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://alphatechsolutions.in/">
+
+  <!-- --- Twitter Card Meta Tags --- -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Alpha Tech Solutions | Digital Agency">
+  <meta name="twitter:description" content="Premium, responsive web designs and digital services that scale your enterprise.">
+  <meta name="twitter:image" content="assets/logo.jpg">
+
+  <!-- --- Favicons --- -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- --- Google Font Poppins --- -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- --- Custom Stylesheet --- -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- --- Lucide Icons SDK --- -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- --- Core Frontend Logic --- -->
+  <script src="js/script.js" defer></script>
+  
+  <!-- --- Theme Blocker Inline Script --- -->
+  <script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Preloading Loading Screen
+       ========================================================================== -->
+  <div id="loader-screen" class="loader-screen">
+    <div class="loader-content">
+      <img src="assets/logo.jpg" alt="Alpha Tech Solutions Logo" class="loader-logo">
+      <div class="loader-bar-container">
+        <div class="loader-bar"></div>
+      </div>
+      <p class="loader-text">Alpha Tech Solutions</p>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header">
+    <div class="container">
+      <a href="#home" class="logo" id="nav-logo">
+        <img src="assets/logo.jpg" alt="Alpha Tech Solutions Logo" class="logo-img">
+        <span class="logo-text">
+          <span>Alpha Tech</span>
+          <span class="logo-tag">Solutions</span>
+        </span>
+      </a>
+
+      <!-- Desktop & Tablet Navigation Menu -->
+      <nav class="nav" id="navigation-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#featured-projects" class="nav-link">Projects</a></li>
+          <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+          <li><a href="#process" class="nav-link">Process</a></li>
+          <li><a href="#assessment" class="nav-link">Assessment</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary nav-btn" id="nav-cta-btn">Get Free Consultation</a>
+      </nav>
+
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark theme">
+          <i data-lucide="sun" class="theme-toggle-icon sun-icon"></i>
+          <i data-lucide="moon" class="theme-toggle-icon moon-icon"></i>
+        </button>
+
+        <!-- Hamburger toggle button (Mobile Only) -->
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-controls="navigation-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Section 1: Hero Section
+       ========================================================================== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in-scroll">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span>Design. Develop. Grow.</span>
+          </div>
+          <h1 class="hero-title">
+            Transforming Ideas Into <span class="text-gradient">Powerful Digital Solutions</span>
+          </h1>
+          <p class="hero-subtitle">
+            We build modern websites, e-commerce platforms, cybersecurity solutions, and digital experiences that help businesses grow.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary" id="hero-cta-consult">Get Free Consultation</a>
+            <a href="#portfolio" class="btn btn-secondary" id="hero-cta-portfolio">View Portfolio</a>
+          </div>
+          
+          <!-- Trust Badges Section -->
+          <div class="hero-trust-badges">
+            <div class="trust-badge">
+              <i data-lucide="check" class="trust-badge-icon"></i>
+              <span>Modern Technology Solutions</span>
+            </div>
+            <div class="trust-badge">
+              <i data-lucide="check" class="trust-badge-icon"></i>
+              <span>Performance Focused Development</span>
+            </div>
+            <div class="trust-badge">
+              <i data-lucide="check" class="trust-badge-icon"></i>
+              <span>Security-Oriented Approach</span>
+            </div>
+            <div class="trust-badge">
+              <i data-lucide="check" class="trust-badge-icon"></i>
+              <span>Long-Term Support</span>
+            </div>
+          </div>
+
+          <div class="hero-highlights">
+            <div class="hero-highlight-item">
+              <i data-lucide="code" class="hero-highlight-icon-check"></i>
+              <span>Website Development</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i data-lucide="shopping-bag" class="hero-highlight-icon-check"></i>
+              <span>E-Commerce</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i data-lucide="search" class="hero-highlight-icon-check"></i>
+              <span>SEO</span>
+            </div>
+            <div class="hero-highlight-item">
+              <i data-lucide="shield" class="hero-highlight-icon-check"></i>
+              <span>Cybersecurity</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Hero Graphics Visual Mockup -->
+        <div class="hero-visual fade-in-scroll delay-200">
+          <div class="hero-card-mesh">
+            <div class="hero-dashboard-preview">
+              <div class="dashboard-header">
+                <div class="dashboard-dots">
+                  <span class="dashboard-dot"></span>
+                  <span class="dashboard-dot"></span>
+                  <span class="dashboard-dot"></span>
+                </div>
+                <div class="dashboard-title">System Status</div>
+              </div>
+              <div class="dashboard-grid">
+                <div class="dashboard-chart">
+                  <span class="chart-bar" style="height: 50%;"></span>
+                  <span class="chart-bar" style="height: 75%;"></span>
+                  <span class="chart-bar" style="height: 95%;"></span>
+                </div>
+                <div class="dashboard-stats">
+                  <div class="stat-row">
+                    <div class="stat-label">Performance</div>
+                    <div class="stat-bar-container">
+                      <div class="stat-bar" style="width: 98%;"></div>
+                    </div>
+                  </div>
+                  <div class="stat-row">
+                    <div class="stat-label">SEO Core</div>
+                    <div class="stat-bar-container">
+                      <div class="stat-bar" style="width: 92%; background-color: var(--primary);"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="floating-icon floating-icon-1">
+              <i data-lucide="code"></i>
+            </div>
+            <div class="floating-icon floating-icon-2">
+              <i data-lucide="shield"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 2: About Alpha Tech Solutions
+       ========================================================================== -->
+  <section id="about" class="section section-bg-light">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content slide-left-scroll">
+          <span class="section-tagline">About Us</span>
+          <h2 class="section-title">About Alpha Tech Solutions</h2>
+          <p class="about-description">
+            Alpha Tech Solutions is a technology-driven digital agency based in Mysuru, Karnataka. We are focused on crafting high-performing digital assets that establish credibility and drive real growth.
+          </p>
+          <p class="about-description">
+            We avoid generic templates and student-level structures. Every project we design is custom-engineered using modern coding principles, ensuring fast page loads, optimized SEO structures, and robust security guidelines.
+          </p>
+        </div>
+        
+        <div class="about-cards-container slide-right-scroll delay-200">
+          <!-- Mission Card -->
+          <div class="about-card">
+            <div class="about-card-icon-wrapper">
+              <i data-lucide="target"></i>
+            </div>
+            <div>
+              <h3 class="about-card-title">Mission</h3>
+              <p class="about-card-text">
+                To help businesses establish a strong digital presence through modern technology solutions.
+              </p>
+            </div>
+          </div>
+          <!-- Vision Card -->
+          <div class="about-card">
+            <div class="about-card-icon-wrapper">
+              <i data-lucide="eye"></i>
+            </div>
+            <div>
+              <h3 class="about-card-title">Vision</h3>
+              <p class="about-card-text">
+                To become a trusted technology partner for businesses and startups.
+              </p>
+            </div>
+          </div>
+          <!-- Growth Mindset Card -->
+          <div class="about-card">
+            <div class="about-card-icon-wrapper">
+              <i data-lucide="trending-up"></i>
+            </div>
+            <div>
+              <h3 class="about-card-title">Growth Mindset</h3>
+              <p class="about-card-text">
+                Driving incremental market expansion for client systems by utilizing data-backed deployment strategies.
+              </p>
+            </div>
+          </div>
+          <!-- Technology Driven Card -->
+          <div class="about-card">
+            <div class="about-card-icon-wrapper">
+              <i data-lucide="cpu"></i>
+            </div>
+            <div>
+              <h3 class="about-card-title">Technology Driven</h3>
+              <p class="about-card-text">
+                Routinely adopting the latest frontend protocols, serverless execution setups, and network firewalls.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 3: Meet The Founder
+       ========================================================================== -->
+  <section id="founder" class="section">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Leadership</span>
+        <h2 class="section-title">Meet The Founder</h2>
+        <p class="section-subtitle">The driving force behind Alpha Tech Solutions' technical and operational standards.</p>
+      </div>
+
+      <div class="founder-card-wrapper slide-up-scroll">
+        <div class="founder-card">
+          <div class="founder-image-area">
+            <div class="founder-img-wrapper">
+              <img src="assets/founder.jpg" alt="Vignesh S | Founder of Alpha Tech Solutions" class="founder-img">
+              <div class="founder-watermark" title="Alpha Tech Solutions Watermark">
+                <img src="assets/logo.jpg" alt="Alpha Tech Solutions Logo" class="founder-watermark-img">
+              </div>
+              <div class="founder-pill-tag">FOUNDER</div>
+            </div>
+          </div>
+          <div class="founder-info-area">
+            <h3 class="founder-name">Vignesh S</h3>
+            <div class="founder-role">Founder, Alpha Tech Solutions</div>
+            <p class="founder-bio">
+              Passionate about technology, web development, cybersecurity, and helping businesses establish a strong digital presence through modern digital solutions. Focused on building reliable, scalable, and business-driven software that creates real-world impact.
+            </p>
+
+            <div class="founder-location">
+              <i data-lucide="map-pin" class="founder-icon-small"></i>
+              <span>Mysuru, Karnataka, India</span>
+            </div>
+            <div class="founder-socials">
+              <a href="mailto:alphatechsolutions.in@gmail.com" class="founder-social-link" aria-label="Mail Founder"><i data-lucide="mail"></i></a>
+              <a href="https://wa.me/918431698587" class="founder-social-link" aria-label="WhatsApp Founder"><i data-lucide="phone"></i></a>
+              <a href="https://www.instagram.com/alphatechsolutions2026" target="_blank" rel="noopener noreferrer" class="founder-social-link" aria-label="Founder's Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 4: Services
+       ========================================================================== -->
+  <section id="services" class="section section-bg-light">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">What We Do</span>
+        <h2 class="section-title">Premium Services We Offer</h2>
+        <p class="section-subtitle">Scaling businesses through robust engineering, design thinking, and active cybersecurity.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. Website Development -->
+        <div class="service-card slide-up-scroll">
+          <div class="service-icon-wrapper">
+            <i data-lucide="code"></i>
+          </div>
+          <h3 class="service-title">Website Development</h3>
+          <p class="service-desc">
+            Custom corporate websites, serverless portals, and landing pages tailored for quick loading, search indexing, and customer conversions.
+          </p>
+        </div>
+        <!-- 2. E-Commerce Development -->
+        <div class="service-card slide-up-scroll delay-100">
+          <div class="service-icon-wrapper">
+            <i data-lucide="shopping-bag"></i>
+          </div>
+          <h3 class="service-title">E-Commerce Development</h3>
+          <p class="service-desc">
+            Multi-tier online storefronts optimized for conversion, secure transactions, responsive layout checks, and inventory databases.
+          </p>
+        </div>
+        <!-- 3. SEO Optimization -->
+        <div class="service-card slide-up-scroll delay-200">
+          <div class="service-icon-wrapper">
+            <i data-lucide="search"></i>
+          </div>
+          <h3 class="service-title">SEO Optimization</h3>
+          <p class="service-desc">
+            On-page content strategies, search consoles, keyword mapping, semantic formatting, and load performance optimizations.
+          </p>
+        </div>
+        <!-- 4. Website Maintenance -->
+        <div class="service-card slide-up-scroll">
+          <div class="service-icon-wrapper">
+            <i data-lucide="refresh-cw"></i>
+          </div>
+          <h3 class="service-title">Website Maintenance</h3>
+          <p class="service-desc">
+            Routine security audits, system health checks, database backups, module updates, and monthly feature edits to prevent disruptions.
+          </p>
+        </div>
+        <!-- 5. Cybersecurity Services -->
+        <div class="service-card slide-up-scroll delay-100">
+          <div class="service-icon-wrapper">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <h3 class="service-title">Cybersecurity Services</h3>
+          <p class="service-desc">
+            SSL protocols, vulnerability assessments, security configurations, secure API integration, and defenses to shield data.
+          </p>
+        </div>
+        <!-- 6. UI/UX Design -->
+        <div class="service-card slide-up-scroll delay-200">
+          <div class="service-icon-wrapper">
+            <i data-lucide="palette"></i>
+          </div>
+          <h3 class="service-title">UI/UX Design</h3>
+          <p class="service-desc">
+            Sleek wireframing, typography hierarchies, layout sheets, and interactive flows designed for high usability and trust.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 5: Portfolio Showcase
+       ========================================================================== -->
+  <section id="featured-projects" class="section">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Featured Real Projects</span>
+        <h2 class="section-title">Real Business Software Developed by Alpha Tech Solutions</h2>
+        <p class="section-subtitle">Centralized enterprise systems engineered to automate workflows, ensure compliance, and streamline workforce administration.</p>
+      </div>
+
+      <div class="featured-projects-list">
+        <!-- Project 1: Signages Maker Audit Management System (Featured Case Study) -->
+        <div class="portfolio-card featured slide-up-scroll">
+          <div class="portfolio-featured-grid">
+            <!-- Left Side: Interactive Browser Mockup -->
+            <div class="browser-mockup-wrapper">
+              <div class="browser-mockup">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot close"></span>
+                    <span class="browser-dot minimize"></span>
+                    <span class="browser-dot expand"></span>
+                  </div>
+                  <div class="browser-address-bar">https://audit.signagesmaker.com</div>
+                </div>
+                
+                <!-- Browser Tabs -->
+                <div class="browser-tabs">
+                  <button type="button" class="portfolio-tab active" data-target="screen-login">
+                    <i data-lucide="log-in" class="tab-icon"></i> Login Screen
+                  </button>
+                  <button type="button" class="portfolio-tab" data-target="screen-dashboard">
+                    <i data-lucide="layout-dashboard" class="tab-icon"></i> Audit Dashboard
+                  </button>
+                </div>
+
+                <div class="browser-screen">
+                  <img src="assets/portfolio-audit-login.jpg" id="screen-login" alt="Signages Maker Login View" class="portfolio-screen-img active">
+                  <img src="assets/portfolio-audit-dashboard.jpg" id="screen-dashboard" alt="Signages Maker Dashboard View" class="portfolio-screen-img">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Premium Case Study Details -->
+            <div class="portfolio-featured-content">
+              <div class="portfolio-badges-row">
+                <span class="portfolio-badge-tag featured">
+                  <i data-lucide="award"></i> Featured Real Project
+                </span>
+                <span class="portfolio-badge-tag completed">
+                  <i data-lucide="check-circle"></i> Completed Project
+                </span>
+                <span class="portfolio-badge-tag solution-type">
+                  <i data-lucide="cpu"></i> Business Automation Solution
+                </span>
+              </div>
+
+              <h3 class="portfolio-featured-title">Signages Maker Audit Management System</h3>
+              <div class="portfolio-category-tag">Business Process Automation Software</div>
+              
+              <p class="portfolio-featured-desc">
+                Developed a secure Audit Management System for Signages Maker to streamline monthly auditing operations, maintain audit history, manage parties, and improve operational monitoring through a centralized dashboard.
+              </p>
+
+              <div class="portfolio-meta-sub">
+                <span class="portfolio-meta-item"><strong>Industry:</strong> Signage Manufacturing</span>
+                <br>
+                <span class="portfolio-meta-item"><strong>Role:</strong> Full Stack Development</span>
+              </div>
+
+              <div class="portfolio-specs-grid">
+                <div class="portfolio-spec-col">
+                  <h4 class="specs-mini-title">Key Features:</h4>
+                  <ul class="portfolio-bullet-list">
+                    <li><i data-lucide="shield-check"></i> Secure Authentication</li>
+                    <li><i data-lucide="layout"></i> Audit Dashboard</li>
+                    <li><i data-lucide="calendar"></i> Monthly Auditing</li>
+                    <li><i data-lucide="history"></i> History Archives</li>
+                    <li><i data-lucide="refresh-cw"></i> Input & Output Checks</li>
+                    <li><i data-lucide="users"></i> Party Management</li>
+                  </ul>
+                </div>
+                <div class="portfolio-spec-col">
+                  <h4 class="specs-mini-title">Tech Stack:</h4>
+                  <div class="portfolio-tech-list">
+                    <span class="tech-tag python">Python</span>
+                    <span class="tech-tag flask">Flask</span>
+                    <span class="tech-tag html5">HTML5</span>
+                    <span class="tech-tag css3">CSS3</span>
+                    <span class="tech-tag js">JavaScript</span>
+                    <span class="tech-tag db">Database</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn-primary portfolio-featured-btn">
+                <span>Discuss Similar Solution</span>
+                <i data-lucide="arrow-right" class="btn-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Signages Maker Payroll & Attendance Management System (Featured Case Study) -->
+        <div class="portfolio-card featured slide-up-scroll delay-100">
+          <div class="portfolio-featured-grid">
+            <!-- Left Side: Interactive Browser Mockup -->
+            <div class="browser-mockup-wrapper">
+              <div class="browser-mockup">
+                <div class="browser-header">
+                  <div class="browser-dots">
+                    <span class="browser-dot close"></span>
+                    <span class="browser-dot minimize"></span>
+                    <span class="browser-dot expand"></span>
+                  </div>
+                  <div class="browser-address-bar">https://payroll.signagesmaker.com</div>
+                </div>
+                
+                <!-- Browser Tabs -->
+                <div class="browser-tabs">
+                  <button type="button" class="portfolio-tab active" data-target="screen-payroll-dash">
+                    <i data-lucide="layout-dashboard" class="tab-icon"></i> Payroll Dashboard
+                  </button>
+                  <button type="button" class="portfolio-tab" data-target="screen-payroll-attend">
+                    <i data-lucide="check-square" class="tab-icon"></i> Attendance Entry
+                  </button>
+                </div>
+
+                <div class="browser-screen">
+                  <img src="assets/portfolio-payroll-dashboard.jpg" id="screen-payroll-dash" alt="Signages Maker Payroll Dashboard View" class="portfolio-screen-img active">
+                  <img src="assets/portfolio-payroll-attendance.jpg" id="screen-payroll-attend" alt="Signages Maker Attendance Entry View" class="portfolio-screen-img">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Premium Case Study Details -->
+            <div class="portfolio-featured-content">
+              <div class="portfolio-badges-row">
+                <span class="portfolio-badge-tag featured">
+                  <i data-lucide="award"></i> Featured Real Project
+                </span>
+                <span class="portfolio-badge-tag completed">
+                  <i data-lucide="check-circle"></i> Completed Project
+                </span>
+                <span class="portfolio-badge-tag solution-type">
+                  <i data-lucide="users"></i> Workforce Automation Solution
+                </span>
+              </div>
+
+              <h3 class="portfolio-featured-title">Signages Maker Payroll & Attendance Management System</h3>
+              <div class="portfolio-category-tag">Workforce Management Software</div>
+              
+              <p class="portfolio-featured-desc">
+                Designed and developed a complete Payroll & Attendance Management System for Signages Maker to automate employee attendance tracking, overtime management, payroll processing, salary advance tracking, and workforce administration through a centralized dashboard.
+              </p>
+
+              <!-- Project Highlights Box -->
+              <div class="portfolio-highlights-box">
+                <div class="highlight-item challenge">
+                  <div class="highlight-icon-wrapper"><i data-lucide="alert-circle"></i></div>
+                  <div class="highlight-content">
+                    <strong>Challenge:</strong> Manual attendance and payroll tracking process.
+                  </div>
+                </div>
+                <div class="highlight-item solution">
+                  <div class="highlight-icon-wrapper"><i data-lucide="cpu"></i></div>
+                  <div class="highlight-content">
+                    <strong>Solution:</strong> Developed a centralized payroll and attendance management platform.
+                  </div>
+                </div>
+                <div class="highlight-item outcome">
+                  <div class="highlight-icon-wrapper"><i data-lucide="trending-up"></i></div>
+                  <div class="highlight-content">
+                    <strong>Outcome:</strong> Improved attendance recording, payroll management, employee tracking, and administrative efficiency.
+                  </div>
+                </div>
+              </div>
+
+              <div class="portfolio-meta-sub">
+                <span class="portfolio-meta-item"><strong>Industry:</strong> Signage Manufacturing</span>
+                <br>
+                <span class="portfolio-meta-item"><strong>Role:</strong> Full Stack Development</span>
+              </div>
+
+              <div class="portfolio-specs-grid">
+                <div class="portfolio-spec-col">
+                  <h4 class="specs-mini-title">Key Features:</h4>
+                  <ul class="portfolio-bullet-list">
+                    <li><i data-lucide="users"></i> Employee Management</li>
+                    <li><i data-lucide="calendar"></i> Attendance Tracking</li>
+                    <li><i data-lucide="indian-rupee"></i> Payroll Processing</li>
+                    <li><i data-lucide="clock"></i> Overtime Control</li>
+                    <li><i data-lucide="wallet"></i> Salary Advances</li>
+                    <li><i data-lucide="file-bar-chart"></i> Attendance Reports</li>
+                  </ul>
+                </div>
+                <div class="portfolio-spec-col">
+                  <h4 class="specs-mini-title">Tech Stack:</h4>
+                  <div class="portfolio-tech-list">
+                    <span class="tech-tag python">Python</span>
+                    <span class="tech-tag flask">Flask</span>
+                    <span class="tech-tag html5">HTML5</span>
+                    <span class="tech-tag css3">CSS3</span>
+                    <span class="tech-tag js">JavaScript</span>
+                    <span class="tech-tag db">Database</span>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#contact" class="btn btn-primary portfolio-featured-btn">
+                <span>Discuss Similar Solution</span>
+                <i data-lucide="arrow-right" class="btn-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 5.5: Solutions We Build
+       ========================================================================== -->
+  <section id="solutions" class="section section-bg-light">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Our Solutions</span>
+        <h2 class="section-title">Solutions We Build</h2>
+        <p class="section-subtitle">Premium web platforms, member portals, and custom databases crafted to optimize business scaling.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 3: ApexFit App -->
+        <div class="portfolio-card slide-up-scroll delay-200">
+          <div class="portfolio-image-wrapper">
+            <img src="assets/portfolio-fitness.png" alt="ApexFit App Device Mockup" class="portfolio-img">
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Membership Portal</span>
+              <span class="portfolio-tag">Scheduler</span>
+              <span class="portfolio-tag">Flexbox</span>
+            </div>
+            <h3 class="portfolio-title">ApexFit App</h3>
+            <p class="portfolio-desc">Gym membership scheduling and fitness tracking user application.</p>
+            <a href="#contact" class="portfolio-btn">Discuss Project <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 4: NovaMart SaaS -->
+        <div class="portfolio-card slide-up-scroll">
+          <div class="portfolio-image-wrapper">
+            <img src="assets/portfolio-ecommerce.png" alt="NovaMart SaaS Device Mockup" class="portfolio-img">
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">E-Commerce</span>
+              <span class="portfolio-tag">Stripe</span>
+              <span class="portfolio-tag">Dashboard</span>
+              <span class="portfolio-tag">Responsive</span>
+            </div>
+            <h3 class="portfolio-title">NovaMart SaaS</h3>
+            <p class="portfolio-desc">High-speed e-commerce platform with automated carts and administration panels.</p>
+            <a href="#contact" class="portfolio-btn">Discuss Project <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Project 5: ApexAbode Platform -->
+        <div class="portfolio-card slide-up-scroll delay-100">
+          <div class="portfolio-image-wrapper">
+            <img src="assets/portfolio-realestate.png" alt="ApexAbode Platform Device Mockup" class="portfolio-img">
+          </div>
+          <div class="portfolio-content">
+            <div class="portfolio-tags">
+              <span class="portfolio-tag">Advanced Search</span>
+              <span class="portfolio-tag">Lead Forms</span>
+              <span class="portfolio-tag">Maps API</span>
+            </div>
+            <h3 class="portfolio-title">ApexAbode Platform</h3>
+            <p class="portfolio-desc">Interactive property listings and local agent lead generation database.</p>
+            <a href="#contact" class="portfolio-btn">Discuss Project <i data-lucide="arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 6: Why Choose Alpha Tech Solutions
+       ========================================================================== -->
+  <section id="why-choose-us" class="section">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Value Proposition</span>
+        <h2 class="section-title">Why Businesses Choose Us</h2>
+        <p class="section-subtitle">We balance premium code development with business-focused growth models.</p>
+      </div>
+
+      <div class="why-grid">
+        <!-- 1. Modern Design -->
+        <div class="why-card slide-up-scroll">
+          <div class="why-icon-wrapper">
+            <i data-lucide="sparkles"></i>
+          </div>
+          <h3 class="why-card-title">Modern Design</h3>
+          <p class="why-card-desc">Sleek visual layouts mirroring global SaaS benchmarks (Stripe, Linear) to establish brand credibility.</p>
+        </div>
+        <!-- 2. Mobile Responsive -->
+        <div class="why-card slide-up-scroll delay-100">
+          <div class="why-icon-wrapper">
+            <i data-lucide="smartphone"></i>
+          </div>
+          <h3 class="why-card-title">Mobile Responsive</h3>
+          <p class="why-card-desc">Designed mobile-first to render beautifully across all screen aspect ratios, tablets, and desktops.</p>
+        </div>
+        <!-- 3. Fast Performance -->
+        <div class="why-card slide-up-scroll delay-200">
+          <div class="why-icon-wrapper">
+            <i data-lucide="zap"></i>
+          </div>
+          <h3 class="why-card-title">Fast Performance</h3>
+          <p class="why-card-desc">Lightweight scripts, optimized image delivery, and serverless builds that achieve lightning-fast load times.</p>
+        </div>
+        <!-- 4. Dedicated Support -->
+        <div class="why-card slide-up-scroll">
+          <div class="why-icon-wrapper">
+            <i data-lucide="headset"></i>
+          </div>
+          <h3 class="why-card-title">Dedicated Support</h3>
+          <p class="why-card-desc">Direct lines of communication, structured updates, and proactive post-launch maintenance help.</p>
+        </div>
+        <!-- 5. Business Focused -->
+        <div class="why-card slide-up-scroll delay-100">
+          <div class="why-icon-wrapper">
+            <i data-lucide="target"></i>
+          </div>
+          <h3 class="why-card-title">Business Focused</h3>
+          <p class="why-card-desc">Every element is built to conversion goals: turning casual traffic into active paying customers.</p>
+        </div>
+        <!-- 6. Scalable Solutions -->
+        <div class="why-card slide-up-scroll delay-200">
+          <div class="why-icon-wrapper">
+            <i data-lucide="expand"></i>
+          </div>
+          <h3 class="why-card-title">Scalable Solutions</h3>
+          <p class="why-card-desc">Modular clean file structures designed to allow easy integration of databases, payments, and dashboards later.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 7: Development Process
+       ========================================================================== -->
+  <section id="process" class="section section-bg-light">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Our Method</span>
+        <h2 class="section-title">Development Process</h2>
+        <p class="section-subtitle">Our structured pathway guarantees structured progress and high-quality deployment.</p>
+      </div>
+
+      <div class="process-timeline">
+        <!-- Step 1: Discovery -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">1</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 1</span>
+              <h3 class="process-card-title">Discovery</h3>
+              <p class="process-card-desc">
+                We sit down to learn your operations, audit existing structures, collect materials, and scope functional goals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Planning -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">2</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 2</span>
+              <h3 class="process-card-title">Planning</h3>
+              <p class="process-card-desc">
+                Establishing system layout grids, structural requirements, wireframe mapping, and setting strict milestone timelines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Design -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">3</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 3</span>
+              <h3 class="process-card-title">Design</h3>
+              <p class="process-card-desc">
+                Fleshing out SaaS-inspired premium layouts. Drafting typography systems, interactive widgets, and light gradients.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: Development -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">4</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 4</span>
+              <h3 class="process-card-title">Development</h3>
+              <p class="process-card-desc">
+                Writing semantic HTML5 code structure, modular style rules, and performance scripts optimized for immediate build.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5: Testing -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">5</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 5</span>
+              <h3 class="process-card-title">Testing</h3>
+              <p class="process-card-desc">
+                Evaluating responsiveness, form validation inputs, script integrity, and running cross-browser compatibility checks.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 6: Launch & Support -->
+        <div class="process-item slide-up-scroll">
+          <div class="process-marker">6</div>
+          <div class="process-content-wrapper">
+            <div class="process-card">
+              <span class="process-card-step">Step 6</span>
+              <h3 class="process-card-title">Launch & Support</h3>
+              <p class="process-card-desc">
+                Deploying to live Vercel servers, setting security parameters, and providing monthly maintenance logs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 8: Digital Readiness Assessment
+       ========================================================================== -->
+  <section id="assessment" class="section">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Interactive Assessment</span>
+        <h2 class="section-title">Digital Readiness Assessment</h2>
+        <p class="section-subtitle">Answer 4 quick questions to get a customized analysis and recommendations for your online presence.</p>
+      </div>
+
+      <div class="assessment-container slide-up-scroll">
+        <div class="assessment-card">
+          <!-- Quiz steps container -->
+          <div id="assessment-quiz-wrapper">
+            <!-- Step 1 -->
+            <div class="assessment-step active" data-step="1">
+              <div class="assessment-progress-indicator">Question 1 of 4</div>
+              <h3 class="assessment-question">Do you currently have a live business website?</h3>
+              <div class="assessment-options">
+                <button class="assessment-option-btn" data-score="25">Yes, we have a fully active website</button>
+                <button class="assessment-option-btn" data-score="10">Yes, but it is outdated or slow</button>
+                <button class="assessment-option-btn" data-score="0">No, we do not have a website</button>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="assessment-step" data-step="2">
+              <div class="assessment-progress-indicator">Question 2 of 4</div>
+              <h3 class="assessment-question">Do you have active SEO optimizations implemented?</h3>
+              <div class="assessment-options">
+                <button class="assessment-option-btn" data-score="25">Yes, we rank well for core keywords</button>
+                <button class="assessment-option-btn" data-score="10">Yes, but we rarely see organic traffic</button>
+                <button class="assessment-option-btn" data-score="0">No, we have no search optimization</button>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="assessment-step" data-step="3">
+              <div class="assessment-progress-indicator">Question 3 of 4</div>
+              <h3 class="assessment-question">Do you have a Google Business Profile verified and optimized?</h3>
+              <div class="assessment-options">
+                <button class="assessment-option-btn" data-score="25">Yes, verified with fresh reviews</button>
+                <button class="assessment-option-btn" data-score="10">Yes, but not updated or active</button>
+                <button class="assessment-option-btn" data-score="0">No, we do not have a profile</button>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="assessment-step" data-step="4">
+              <div class="assessment-progress-indicator">Question 4 of 4</div>
+              <h3 class="assessment-question">Do you regularly generate high-quality online leads?</h3>
+              <div class="assessment-options">
+                <button class="assessment-option-btn" data-score="25">Yes, online leads are our primary source</button>
+                <button class="assessment-option-btn" data-score="10">Occasionally, but not consistently</button>
+                <button class="assessment-option-btn" data-score="0">No, we do not generate online leads</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assessment Results (Hidden Initially) -->
+          <div id="assessment-results-wrapper" class="assessment-results-wrapper" style="display: none;">
+            <div class="results-grid">
+              <div class="results-score-box">
+                <h3 class="results-heading">Digital Readiness Score</h3>
+                <div class="score-dial">
+                  <svg class="score-ring" width="160" height="160">
+                    <circle class="score-ring-bg" cx="80" cy="80" r="70"></circle>
+                    <circle id="score-ring-fill" class="score-ring-fill" cx="80" cy="80" r="70"></circle>
+                  </svg>
+                  <div id="score-text" class="score-text">0/100</div>
+                </div>
+                <div id="score-label" class="score-label">Neutral</div>
+              </div>
+              
+              <div class="results-recommendations">
+                <h4 class="recommendations-heading">Custom Recommendations</h4>
+                <ul id="recommendations-list" class="recommendations-list">
+                  <!-- JS to populate list items -->
+                </ul>
+                <button id="assessment-reset-btn" class="btn btn-secondary">Restart Assessment</button>
+                <a href="#contact" class="btn btn-primary">Request Free Consultation</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========================================================================
+       Section 10: FAQ
+       ========================================================================== -->
+  <section id="faq" class="section section-bg-light">
+    <div class="container">
+      <div class="section-header slide-up-scroll">
+        <span class="section-tagline">Common Queries</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Clear answers regarding our services, delivery speed, and operational standards.</p>
+      </div>
+
+      <div class="faq-container">
+        <!-- FAQ 1 -->
+        <div class="faq-card slide-up-scroll">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">How long does website development take?</span>
+            <span class="faq-icon-wrapper"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Typically, a premium landing page takes about 1-2 weeks. A standard corporate website (5-10 pages) takes 2-4 weeks, while larger e-commerce portals or custom database integrations take 4-8 weeks, depending on functional specifics.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-card slide-up-scroll">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do you provide hosting assistance?</span>
+            <span class="faq-icon-wrapper"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, we provide end-to-end guidance to select and set up hosting plans. We regularly deploy client systems onto serverless setups like Vercel, Netlify, and Cloudflare Pages for high speed, or Hostinger, AWS, and GCP for custom setups.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-card slide-up-scroll">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Can you redesign existing websites?</span>
+            <span class="faq-icon-wrapper"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Absolutely. We reconstruct legacy sites from the ground up. We redesign aesthetic interfaces to fit modern glassmorphism patterns, rewrite files for responsiveness, improve loading metrics, and preserve your existing search indexing.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-card slide-up-scroll">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do you offer maintenance?</span>
+            <span class="faq-icon-wrapper"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, we provide monthly maintenance support. Our support covers uptime monitoring, security database backups, patches, page speed monitoring, and a dedicated monthly hour allowance for updates.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="faq-card slide-up-scroll">
+          <button class="faq-header" aria-expanded="false">
+            <span class="faq-question">Do you provide SEO services?</span>
+            <span class="faq-icon-wrapper"><i data-lucide="chevron-down"></i></span>
+          </button>
+          <div class="faq-body">
+            <div class="faq-content">
+              Yes, we integrate semantic tags, layout structures, and keyword metrics directly into all of our website structures. We also offer advanced monthly SEO campaigns for targeted rankings and schema expansions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 11: Contact Us
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info slide-left-scroll">
+          <span class="section-tagline">Consultation</span>
+          <h2 class="contact-title">Let's Build Something Amazing</h2>
+          <p class="contact-desc">
+            Reach out to discuss your technical challenges, explore scalable opportunities, and receive an obligation-free commercial estimate.
+          </p>
+
+          <div class="contact-details-list">
+            <!-- Email -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="mail"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Business Email</h4>
+                <p><a href="mailto:alphatechsolutions.in@gmail.com">alphatechsolutions.in@gmail.com</a></p>
+              </div>
+            </div>
+            <!-- Phone/WhatsApp -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="phone"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Phone & WhatsApp</h4>
+                <p><a href="tel:+918431698587">+91 8431698587</a></p>
+              </div>
+            </div>
+            <!-- Instagram -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Instagram</h4>
+                <p><a href="https://www.instagram.com/alphatechsolutions2026" target="_blank" rel="noopener noreferrer" aria-label="Alpha Tech Solutions on Instagram">@alphatechsolutions2026</a></p>
+              </div>
+            </div>
+            <!-- Location -->
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+              <div class="contact-detail-content">
+                <h4>Location</h4>
+                <p>Mysuru, Karnataka, India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-notice">
+            <p>Your information is secure and will only be used to respond to your enquiry.</p>
+          </div>
+        </div>
+
+        <div class="contact-card slide-right-scroll delay-200">
+          
+          <!-- Success message card -->
+          <div class="form-message form-message-success" id="form-success" style="display: none;">
+            <i data-lucide="check-circle" class="form-message-icon"></i>
+            <div class="form-message-content">
+              <h5 class="form-message-title">✅ Enquiry Received</h5>
+              <div class="form-message-ref">Reference ID: <strong id="success-ref-id">ATS-2026-0000</strong></div>
+              <p class="form-message-text">A confirmation email has been sent to your inbox. Our team will contact you shortly.</p>
+            </div>
+          </div>
+
+          <!-- Error message card -->
+          <div class="form-message form-message-error" id="form-error" style="display: none;">
+            <i data-lucide="alert-circle" class="form-message-icon"></i>
+            <div class="form-message-content">
+              <h5 class="form-message-title">Something went wrong.</h5>
+              <p class="form-message-text">Please try again later or contact us directly at alphatechsolutions.in@gmail.com</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form id="contact-form" novalidate>
+            <!-- Honeypot Spam Protection (hidden from user) -->
+            <div style="display:none;">
+              <label for="honeypot">Spam Protection (Do not fill)</label>
+              <input type="text" id="honeypot" name="honeypot" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-group">
+              <label for="full-name" class="form-label">Full Name *</label>
+              <input type="text" id="full-name" class="form-input" placeholder="e.g. Vignesh S" required>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="email-address" class="form-label">Email Address *</label>
+                <input type="email" id="email-address" class="form-input" placeholder="e.g. vignesh@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone-number" class="form-label">Phone Number *</label>
+                <input type="tel" id="phone-number" class="form-input" placeholder="e.g. 8431698587" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="business-name" class="form-label">Business Name *</label>
+              <input type="text" id="business-name" class="form-input" placeholder="e.g. Alpha Tech Solutions" required>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="service-required" class="form-label">Service Required *</label>
+                <select id="service-required" class="form-input" required>
+                  <option value="" disabled selected>-- Select a Service --</option>
+                  <option value="Website Development">Website Development</option>
+                  <option value="E-Commerce Development">E-Commerce Development</option>
+                  <option value="SEO Optimization">SEO Optimization</option>
+                  <option value="Website Maintenance">Website Maintenance</option>
+                  <option value="Cybersecurity Services">Cybersecurity Services</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="preferred-contact" class="form-label">Preferred Contact *</label>
+                <select id="preferred-contact" class="form-input" required>
+                  <option value="" disabled selected>-- Select Method --</option>
+                  <option value="Email">Email</option>
+                  <option value="Phone">Phone</option>
+                  <option value="WhatsApp">WhatsApp</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message *</label>
+              <textarea id="message" class="form-input" placeholder="Describe your web development or digital requirements..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-btn w-full">
+              <span class="btn-text">Submit Enquiry</span>
+              <i data-lucide="send" class="btn-icon"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="assets/logo.jpg" alt="Alpha Tech Solutions Logo" class="logo-img">
+            <span class="logo-text">
+              <span>Alpha Tech</span>
+              <span class="logo-tag">Solutions</span>
+            </span>
+          </a>
+          <p class="footer-tagline">Design. Develop. Grow.</p>
+          <div class="footer-socials">
+            <a href="mailto:alphatechsolutions.in@gmail.com" class="footer-social-link" aria-label="Mail"><i data-lucide="mail"></i></a>
+            <a href="https://wa.me/918431698587" class="footer-social-link" aria-label="WhatsApp"><i data-lucide="phone"></i></a>
+            <a href="https://www.instagram.com/alphatechsolutions2026" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Us</a></li>
+            <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+            <li><a href="#assessment" class="footer-link">Assessment</a></li>
+            <li><a href="#estimator" class="footer-link">Estimator</a></li>
+            <li><a href="#faq" class="footer-link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services" class="footer-link">Website Development</a></li>
+            <li><a href="#services" class="footer-link">E-Commerce</a></li>
+            <li><a href="#services" class="footer-link">SEO Optimization</a></li>
+            <li><a href="#services" class="footer-link">Website Maintenance</a></li>
+            <li><a href="#services" class="footer-link">Cybersecurity Services</a></li>
+            <li><a href="#services" class="footer-link">UI/UX Design</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact Information</h4>
+          <div class="footer-contact-info">
+            <div class="footer-contact-item">
+              <i data-lucide="map-pin" class="footer-contact-icon"></i>
+              <span>Mysuru, Karnataka, India</span>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="phone" class="footer-contact-icon"></i>
+              <a href="tel:+918431698587">+91 8431698587</a>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="mail" class="footer-contact-icon"></i>
+              <a href="mailto:alphatechsolutions.in@gmail.com">alphatechsolutions.in@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram footer-contact-icon"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+              <a href="https://www.instagram.com/alphatechsolutions2026" target="_blank" rel="noopener noreferrer" aria-label="Alpha Tech Solutions on Instagram">@alphatechsolutions2026</a>
+            </div>
+            <div class="footer-contact-item">
+              <i data-lucide="clock" class="footer-contact-icon"></i>
+              <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Alpha Tech Solutions. All Rights Reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#about" class="footer-bottom-link">Privacy Policy</a>
+          <a href="#about" class="footer-bottom-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Chat Widget
+       ========================================================================== -->
+  <a href="https://wa.me/918431698587?text=Hello%20Alpha%20Tech%20Solutions%2C%0A%0AI%20would%20like%20to%20discuss%20my%20project%20requirements." class="whatsapp-widget" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span class="whatsapp-widget-pulse"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="#ffffff" style="display: block;">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.457L0 24zm6.59-4.846c1.6.95 3.588 1.453 5.407 1.454 5.536 0 10.039-4.505 10.043-10.047.003-2.685-1.047-5.207-2.958-7.122C17.228 1.525 14.72 1.474 12 1.474c-5.542 0-10.043 4.501-10.047 10.045-.001 1.895.501 3.734 1.456 5.328L2.4 21.056l4.247-1.902z" fill="#ffffff"/>
+      <path d="M17.472 14.382c-.302-.15-1.791-.882-2.074-.984-.284-.103-.49-.15-.691.15-.203.3-.787.985-.965 1.185-.177.2-.355.226-.657.076-.301-.15-1.274-.469-2.426-1.496-.897-.8-1.502-1.787-1.68-2.088-.177-.3-.02-.463.13-.612.137-.133.3-.347.45-.52.149-.174.199-.3.3-.498.098-.2.05-.374-.025-.524-.075-.15-.69-1.666-.946-2.285-.25-.6-.525-.515-.72-.525-.19-.01-.408-.01-.623-.01-.216 0-.567.08-.863.407-.296.326-1.13 1.102-1.13 2.687 0 1.587 1.153 3.124 1.314 3.339.162.215 2.268 3.463 5.49 4.854.767.33 1.365.528 1.83.676.77.244 1.47.21 2.025.127.618-.093 1.791-.733 2.046-1.439.255-.707.255-1.313.18-1.44-.075-.127-.272-.203-.574-.354z" fill="#ffffff"/>
+    </svg>
+  </a>
+
+</body>
+</html>

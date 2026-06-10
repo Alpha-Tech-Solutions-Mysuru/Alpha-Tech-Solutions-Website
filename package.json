@@ -1,0 +1,14 @@
+{
+  "name": "alpha-tech-solutions",
+  "version": "1.0.0",
+  "description": "Alpha Tech Solutions Digital Agency Website with Node.js backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13"
+  }
+}
