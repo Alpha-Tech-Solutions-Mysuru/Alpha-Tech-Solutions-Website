@@ -1,5 +1,31 @@
 const nodemailer = require('nodemailer');
 
+function parseRequestBody(body) {
+  if (!body) return {};
+  if (typeof body === 'string') {
+    try {
+      return JSON.parse(body);
+    } catch (error) {
+      return {};
+    }
+  }
+  return body;
+}
+
+function getMailErrorMessage(error) {
+  const code = error && (error.code || error.responseCode);
+
+  if (code === 'EAUTH' || code === 535) {
+    return 'Mail authentication failed. Check SMTP username, password, and app-password settings.';
+  }
+
+  if (code === 'ECONNECTION' || code === 'ESOCKET' || code === 'ETIMEDOUT') {
+    return 'Mail server connection failed. Check SMTP host, port, and provider access rules.';
+  }
+
+  return 'Internal server error processing mail request.';
+}
+
 module.exports = async (req, res) => {
   // Only allow POST requests
   if (req.method !== 'POST') {
@@ -7,7 +33,8 @@ module.exports = async (req, res) => {
   }
 
   try {
-    const { name, email, phone, businessName, serviceRequired, preferredContact, message, honeypot } = req.body;
+    const payload = parseRequestBody(req.body);
+    const { name, email, phone, businessName, serviceRequired, preferredContact, message, honeypot } = payload;
 
     // 1. Honeypot Spam Protection
     if (honeypot && honeypot.trim() !== '') {
@@ -211,11 +238,17 @@ module.exports = async (req, res) => {
     };
 
     // 7. Check for SMTP credentials and verify production flags
-    const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
+    const {
+      SMTP_HOST,
+      SMTP_PORT,
+      SMTP_USER,
+      SMTP_PASS,
+      SMTP_SERVICE
+    } = process.env;
 
     const isProduction = process.env.NODE_ENV === 'production' || process.env.VERCEL_ENV === 'production';
 
-    if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
+    if ((!SMTP_SERVICE && !SMTP_HOST) || !SMTP_USER || !SMTP_PASS) {
       if (isProduction) {
         // Crash immediately in production if variables are missing
         console.error('CRITICAL: SMTP environment variables are missing in production environment.');
@@ -248,21 +281,37 @@ module.exports = async (req, res) => {
     }
 
     // 8. Create Nodemailer Transport
-    const transporter = nodemailer.createTransport({
-      host: SMTP_HOST,
-      port: parseInt(SMTP_PORT || '587', 10),
-      secure: parseInt(SMTP_PORT || '587', 10) === 465, // true for 465, false for other ports
+    const transporterConfig = {
       auth: {
         user: SMTP_USER,
         pass: SMTP_PASS
-      }
-    });
+      },
+      connectionTimeout: 15000,
+      greetingTimeout: 15000,
+      socketTimeout: 20000
+    };
 
-    // 9. Run parallel dispatches
-    await Promise.all([
-      transporter.sendMail(adminMailOptions),
-      transporter.sendMail(clientMailOptions)
-    ]);
+    if (SMTP_SERVICE) {
+      transporterConfig.service = SMTP_SERVICE;
+    } else {
+      transporterConfig.host = SMTP_HOST;
+      transporterConfig.port = parseInt(SMTP_PORT || '587', 10);
+      transporterConfig.secure = parseInt(SMTP_PORT || '587', 10) === 465;
+    }
+
+    const transporter = nodemailer.createTransport(transporterConfig);
+
+    await transporter.verify();
+
+    // Send the admin notification first. If the client auto-reply fails,
+    // the lead should still be accepted because the business notification succeeded.
+    await transporter.sendMail(adminMailOptions);
+
+    try {
+      await transporter.sendMail(clientMailOptions);
+    } catch (clientMailError) {
+      console.error('Client confirmation mail failed:', clientMailError);
+    }
 
     // 10. Return Success payload
     return res.status(200).json({
@@ -275,7 +324,7 @@ module.exports = async (req, res) => {
     console.error('Server Side Mail Submission Error:', error);
     return res.status(500).json({
       success: false,
-      message: 'Internal server error processing mail request.'
+      message: getMailErrorMessage(error)
     });
   }
 };
